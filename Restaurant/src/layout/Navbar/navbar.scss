@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin Myflex() {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.navbarLine{
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    .langChange{
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        padding: 4px 6px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        button{
+            background-color: transparent;
+            border: 2px solid #111;
+    @include Myflex;
+    img{
+        width: 40px;
+        height: 20px;
+
+        cursor: pointer;
+
+    }
+        }
+        
+        
+    }
+    font-family: Poppins,sans-serif;
+    height: 200px;
+    @include Myflex;
+    .navbar{
+        border: 2px solid white;
+        background-color: #111;
+        width: 75%;
+        height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 100px;
+        .navbarLogo{
+            font-size: 24px;
+            .linkNavbar{
+                text-decoration: none;
+                color: white;
+            }
+        }
+        .navbarLinks{
+            ul{
+                display: flex;
+                gap: 50px;
+                list-style: none;
+                font-size: 20px;
+
+                .LinkLi{
+                    text-decoration: none;
+                    color: white;
+                    transition: 0.2s;
+                    font-size: 15px;
+
+                }
+                .LinkLi:hover{
+                    color: #c7ad88;
+                    transition: 0.2s;
+
+                }
+                li{
+                text-decoration: none;
+
+                }
+            }
+        }   
+    }
+}

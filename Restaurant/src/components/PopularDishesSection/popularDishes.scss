@@ -1,0 +1,130 @@
+@mixin Myflex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#popularDishesSection {
+  background-image: url('https://nunforest.com/restory-demo/upload/banners/background@2x.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 120vh;
+  /* Set the height to 100% of the viewport height */
+  width: 100%;
+  // @include Myflex;
+
+  .popularDishesText {
+    height: 25%;
+    width: 100%;
+    @include Myflex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 35px;
+      color: white;
+      margin-bottom: 30px;
+      font-family: 'Kalnia', serif;
+    }
+
+    img {
+      max-width: 70px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .popularSlider {
+    height: 75%;
+  }
+
+  .swiper {
+    width: 1140px;
+    height: 75%;
+  }
+
+  .swiper-slide {
+    height: 100%;
+
+    .sliderBigBox {
+      height: 50%;
+      width: 100%;
+      position: relative;
+      display: flex;
+
+      .sliderBigBoxLeft {
+        width: 50%;
+        height: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .sliderBigBoxRight {
+        background-color: #2d2f31;
+        width: 50%;
+        height: 100%;
+        @include Myflex;
+        flex-direction: column;
+        gap: 20px;
+
+        h1 {
+          color: #c7ad88;
+        }
+
+        span {
+          max-width: 90%;
+          text-align: center;
+          color: #999;
+        }
+
+        p {
+          color: #c7ad88;
+          font-size: 30px;
+        }
+      }
+
+      .sliderSmallBox {
+        position: absolute;
+        top: 10%;
+        left: 4%;
+        border: 3px solid #c7ad88;
+        width: 92%;
+        height: 80%;
+        opacity: 0;
+        transition: 0.3s;
+      }
+    }
+
+    .sliderBigBox:hover {
+      .sliderSmallBox {
+        opacity: 1;
+        transition: 0.3s;
+      }
+    }
+
+    .sliderDownSmallBox {
+      height: 50%;
+      width: 100%;
+    }
+  }
+   .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{
+    background-color: #999 ;
+    width: 10px;
+    height: 10px;
+   }
+
+
+}
