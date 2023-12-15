@@ -4,7 +4,9 @@
     "menu": "Menu",
     "blog": "Blog",
     "reservation": "Reservation",
-    "location": "Location"
+    "location": "Location",
+    "popularDishes":"POPULAR DISHES "
+
     
     
   }

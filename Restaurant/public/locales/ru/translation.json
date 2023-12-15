@@ -1,9 +1,9 @@
 {
-    "home": "Home",
-    "about": "About us",
-    "menu": "Menu",
-    "blog": "Blog",
-    "reservation": "Reservation",
-    "location": "Location",
-    "popularDishes":"POPULAR DISHES"
+    "home": "Главный",
+    "about": "O нас",
+    "menu": "Меню",
+    "blog": "Блог",
+    "reservation": "Бронирование",
+    "location": "Расположение",
+    "popularDishes":"ПОПУЛЯРНЫЕ БЛЮДА"
   }

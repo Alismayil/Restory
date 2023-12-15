@@ -3,12 +3,14 @@ import './popularDishes.scss'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from 'swiper/modules';
 import "swiper/css";
+import { useTranslation } from 'react-i18next';
 
 function PopularDishesSection() {
+  const { t } = useTranslation();
   return (
     <section id='popularDishesSection'>
       <div className="popularDishesText">
-                <h1>POPULAR DISHES</h1>
+                <h1>{t("popularDishes")} </h1>
                 <img src="https://nunforest.com/restory-demo/images/divider@2x.png" alt="" />
       </div>
    <div className='popularSlider'>
