@@ -1,8 +1,11 @@
 import React from 'react'
+import OpenReservationSection from '../../components/OpenReservationSection'
 
 function ReservationPage() {
   return (
-    <div>Reservation Page</div>
+    <>
+      <OpenReservationSection/>
+    </>
   )
 }
 

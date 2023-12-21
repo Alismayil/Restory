@@ -1,8 +1,11 @@
 import React from 'react'
+import OpenMenuSection from '../../components/OpenMenuSection'
 
 function MenuPage() {
   return (
-    <div>Menu Page</div>
+    <>
+    <OpenMenuSection/>
+    </>
   )
 }
 

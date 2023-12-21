@@ -1,0 +1,26 @@
+@mixin Myflex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#openAboutUsSection {
+    height: 65vh;
+    width: 100%;
+    background-image: url(https://nunforest.com/restory-demo/upload/banners/ban6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include Myflex;
+    flex-direction: column;
+    color: white;
+
+    h1 {
+        // font-family: Poppins,sans-serif;
+        font-size: 100px;
+    }
+
+    p {
+        color: #c7ad88;
+    }
+}
