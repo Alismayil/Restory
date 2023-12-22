@@ -1,0 +1,128 @@
+@mixin Myflex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clientReviewsSection{
+    width: 100%;
+    height: 120vh;
+    .clientReviewsUpBox {
+        
+        width: 100%;
+        height: 20%;
+        @include Myflex;
+
+        .clientReviewsText {
+            height: 25%;
+            width: 100%;
+            @include Myflex;
+            flex-direction: column;
+
+            h1 {
+                font-size: 35px;
+                color: black;
+                margin-bottom: 30px;
+                font-family: 'Kalnia', serif;
+            }
+
+            img {
+                max-width: 70px;
+            }
+        }
+    }
+    .clientReviewsMiddleBox{
+        width: 100%;
+        height: 50%;
+        @include Myflex;
+        position: relative;
+
+        
+.swiper {
+    width: 65%;
+    height: 60%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .swiperLine{
+        width: 85%;
+        height:85%;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        border: 2px solid #c7ad88;
+    }
+    .swiperImgBox{
+        width: 30%;
+        height: 100%;
+        img{
+            max-width: 100%;
+        }
+    }
+    .swiperTextBox{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 0px 50px;
+        gap: 20px;
+        h1{
+            color: #c7ad88;
+        }
+        .line{
+            background-color: #c7ad88;
+            height: 2px;
+            width: 45px;
+        }
+        p{
+            text-align: start;
+            max-width: 95%;
+            color: rgb(189, 184, 184);
+        }
+    }
+  }
+  
+   .swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{
+    // display: none;   
+    position: absolute;
+    bottom: -0px;
+   }
+   .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+    background-color: #c7ad88;
+      }
+  
+    }
+    .clientReviewsDownBox{
+        // background-color: yellow;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        @include Myflex;
+        .clientReviewsIconAndTextBox{
+        @include Myflex;
+        flex-direction: column;
+            // background-color: teal;
+            height: 100%;
+            width: 18.78%;
+            // border: 1px solid white;
+            h2{
+                margin: 20px 0px;
+                font-size: 18px;
+                color: #c7ad88;
+            }
+            p{
+                font-size: 40px;
+                color: gray;
+            }
+        }
+    }
+}
