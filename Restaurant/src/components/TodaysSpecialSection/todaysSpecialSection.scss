@@ -1,0 +1,119 @@
+@mixin Myflex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#todaysSpecialSection {
+    width: 100%;
+    height: 75vh;
+    padding: 0px 189.5px;
+
+    .todaysSpecialUpBox {
+        width: 100%;
+        height: 20%;
+        @include Myflex;
+
+        h1 {
+            color: #c7ad88;
+            font-size: 22px;
+        }
+    }
+
+    .todaysSpecialDownBox {
+        width: 100%;
+        height: 70%;
+     
+        .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+            background-color: gray;
+            width: 10px;
+            height: 10px;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+           
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            height: 83.3%;
+            display: flex;
+
+            .sliderImgBox {
+                position: relative;
+                width: 100%;
+                height: 95%;
+                transition: 0.3s;
+
+                img {
+                    max-width: 100%;
+                }
+
+                
+
+            }
+
+            .sliderTextBox {
+                transition: 0.3s;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                display: flex;
+                padding: 0px 50px;
+                justify-content: center;
+                text-align: start;
+                flex-direction: column;
+                gap: 30px;
+
+                h1 {
+                    max-width: 150px;
+                    font-size: 22px;
+                    color: #fff;
+                }
+
+                .sliderLine {
+                    background-color: #c7ad88;
+                    width: 50px;
+                    height: 2.5px;
+                }
+
+                p {
+                    color: #fff;
+                    font-size: 22px;
+                }
+                .sliderHoverBox {
+                    transition: 0.6s;
+                    opacity: 1;
+                    position: absolute;
+                    top: 17px;
+                    left: 25px;
+                    @include Myflex;
+                    transition: 0.3s;
+                    border: 2px solid #c7ad88;
+                    width: 88%;
+                    height: 88%;
+                    opacity: 0;
+                    transition: 0.3s;
+
+                }
+
+            }
+            .sliderTextBox:hover{
+                background-color: rgba(0, 0, 0, 0.408);
+                transition: 0.3s;
+                .sliderHoverBox{
+                    transition: 0.3s;
+                    opacity: 1;
+                }
+            }
+        }
+
+
+    }
+
+
+}
